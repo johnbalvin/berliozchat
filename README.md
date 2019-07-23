@@ -16,7 +16,7 @@ We deploy this application using Berlioz to local computer, and to the cloud as 
 
 	1. Request a [demo](https://berlioz.cloud/#demo)
 	2. Install a [node.js](https://nodejs.org)
-	3. Install  berlioz CLI: `npm install berlioz -g --unsafe-perm`
+	3. Install [berlioz CLI](https://www.npmjs.com/package/berlioz) `npm install berlioz -g --unsafe-perm`
 	4. Install a [graphviz](http://www.graphviz.org/download)
 	5. Install a [docker](https://www.docker.com/)
 	6. Create a key with owner permission in [Google Cloud IAM ](https://console.cloud.google.com/iam-admin/iam)
