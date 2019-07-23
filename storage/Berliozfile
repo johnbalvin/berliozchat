@@ -1,0 +1,5 @@
+kind: database
+cluster: addr
+name: images
+class: storage
+subClass: storage

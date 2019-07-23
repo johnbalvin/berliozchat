@@ -1,0 +1,13 @@
+---
+kind: service
+cluster: addr
+name: web
+
+provides:
+    default:
+        port: 3000
+        protocol: http
+
+consumes:
+  - database: images
+  - service: app

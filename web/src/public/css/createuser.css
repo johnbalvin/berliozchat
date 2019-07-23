@@ -1,0 +1,55 @@
+html{
+    font-size: 25px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+body{
+    background-color: #000000;
+    height: 99vh;
+}
+#newUser{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+    max-width: 300px;
+}
+#buttonWrapper button{
+    padding: 10px;
+    border-radius: 7px;
+    border: 0px;
+    background-color: #BBDEFB;
+}
+#buttonWrapper button:active{
+    transform: scale(0.96);
+}
+#buttonWrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#newUser{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 12px;
+}
+#newUser input{
+    border-radius: 7px;
+    padding: 7px;
+}
+#newUser label{
+    color: #fff;
+}
+#spinning{
+    display: none;
+    animation: rotate 0.9s infinite;
+    animation-timing-function: cubic-bezier(0.35, 0.27, 0.15, 0.86);
+}
+#error{
+    visibility: hidden;
+    text-align: center;
+    color:#F8BBD0;
+}
+@keyframes rotate{
+    100%{transform:rotate(360deg);}
+}

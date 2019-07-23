@@ -1,0 +1,8 @@
+---
+kind: database
+cluster: addr
+name: chat
+class: sql
+subClass: sql
+
+init: init.sql

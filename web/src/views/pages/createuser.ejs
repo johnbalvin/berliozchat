@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Berlioz Chat</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/createuser.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <script defer src="/scripts/createuser.js"></script>
+</head>
+<header>
+    <% include ../partials/header %>
+</header>
+<body>
+  <form id="newUser">
+    <span id="error">¡Repeated user!</span>
+    <label for="userinput">Create a user name to enter the chat(most be unique)</label>
+    <input placeholder="username" autofocus id="userinput" required>
+    <div id="buttonWrapper">
+        <button>Create</button>
+        <svg id="spinning" width="25" height="25" viewBox="0 0 32 32"  fill="#B2DFDB">
+          <path d="M13 29c0-1.657 1.343-3 3-3s3 1.343 3 3c0 1.657-1.343 3-3 3s-3-1.343-3-3zM0 16c0-1.657 1.343-3 3-3s3 1.343 3 3c0 1.657-1.343 3-3 3s-3-1.343-3-3zM26 16c0-1.657 1.343-3 3-3s3 1.343 3 3c0 1.657-1.343 3-3 3s-3-1.343-3-3zM3.808 6.808c0-1.657 1.343-3 3-3s3 1.343 3 3c0 1.657-1.343 3-3 3s-3-1.343-3-3zM22.192 25.192c0-1.657 1.343-3 3-3s3 1.343 3 3c0 1.657-1.343 3-3 3s-3-1.343-3-3zM3.808 25.192c0-1.657 1.343-3 3-3s3 1.343 3 3c0 1.657-1.343 3-3 3s-3-1.343-3-3zM22.192 6.808c0-1.657 1.343-3 3-3s3 1.343 3 3c0 1.657-1.343 3-3 3s-3-1.343-3-3z"></path>
+        </svg>
+    </div>
+  </form>
+</body>
+</html>

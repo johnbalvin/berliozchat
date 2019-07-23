@@ -1,0 +1,21 @@
+{
+  "name": "berlioz-sample-hello-web",
+  "version": "1.0.0",
+  "description": "berlioz-sample-hello-web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "berlioz-gcp": "^1.0.15",
+    "berlioz-sdk": "^1.0.120",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "ejs": "^2.5.8",
+    "express": "^4.16.4",
+    "multer": "^1.4.2",
+    "promise": "^8.0.3"
+  }
+}

@@ -1,0 +1,155 @@
+#chatWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+#chat{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr auto;
+    background-color:#424242;
+    overflow: hidden;
+    height: 90vh; 
+    width: 100%;
+    max-width: 550px;
+    margin: 7px;
+}
+#up .update{
+    cursor: pointer;
+    border:none;
+    background-color: transparent;
+}
+#up .update:active{
+    transform: scale(0.95);
+}
+#errorMessage{
+    visibility: hidden;
+    text-align: center;
+    color:#880E4F;
+}
+#waiting{
+    display: none;
+    justify-content: center;
+}
+#messages{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    padding-top:5px;
+    height: 100%;
+    min-height: min-content;
+}
+#messagesWrapper{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+#chat .message{
+    max-width:50%;
+    margin: 0 10px 10px 10px;
+    padding: 3px;
+    background-color: #E0E0E0;
+    color:black;
+    border-radius: 7px;
+}
+#chat .message.me{
+    align-self: flex-end;
+}
+#chat .message .user{
+    display: flex;
+}
+#chat .message .userName{
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+#chat .message .userText{
+    margin: 5px 2px 2px 20px;
+}
+#chat .message .userDate{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    margin-left: 20px;
+    font-size: 12px;
+}
+#newMessage{
+    display:grid;
+    grid-template-columns:1fr 45px;
+    grid-gap:5px;
+    width:96%;
+    margin:7px;
+}
+#newMessage .textBox{
+    height: 25px;
+    grid-column:1/2;
+    padding:7px;
+    border-radius:10px;
+    background-color:#EEEEEE;
+}
+#newMessage button{
+    border: 0;
+    justify-content: center;
+}
+.spinning svg{
+    animation: rotate 0.9s infinite;
+    animation-timing-function: cubic-bezier(0.35, 0.27, 0.15, 0.86);
+}
+body .bRadius50 {
+    border-radius: 50%;
+}
+.userImgWrapper{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.userImg{
+    max-height: 300px;
+    object-fit: contain;
+}
+#mesBtn{
+    display: none;
+}
+#imgBtn input{
+    display: none;
+}
+.message[data-type="2"] .userText{
+    display: none;
+}
+.message[data-type="2"] .userImg{
+    display: flex;
+}
+#up{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#exit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+}
+.botonBonito{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 2px;
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: var(--seleccionado);
+    box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+@keyframes rotate{
+    100%{transform:rotate(360deg);}
+}
